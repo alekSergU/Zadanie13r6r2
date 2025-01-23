@@ -21,7 +21,7 @@ namespace Zadanie13r6r2
             string[] itogBook = new string[massBook.Length - iter];
             for (int i = 0, j = 0; i < massBook.Length; i++)
             {
-                if (massBook[i] == "")
+                if (string.IsNullOrWhiteSpace(massBook[i]))
                 {
                     continue;
                 }
