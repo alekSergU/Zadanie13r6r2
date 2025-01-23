@@ -12,7 +12,7 @@ namespace Zadanie13r6r2
             int iter = 0;
             for (int i = 0; i < massBook.Length; i++)
             {
-                if (massBook[i] == "")
+                if (string.IsNullOrWhiteSpace(massBook[i]))
                 {
                     iter++;
                 }
